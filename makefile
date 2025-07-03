@@ -3,7 +3,7 @@ CXXFLAGS = -std=c++17 -Wall -pthread
 
 all: dsm_simulator generate_commands
 
-dsm_simulator: DsmSimulator.cpp
+dsm_simulator: dsm_simulator.cpp
 	$(CXX) $(CXXFLAGS) -o dsm_simulator DsmSimulator.cpp
 
 generate_commands: generate_commands.cpp
